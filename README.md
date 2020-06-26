@@ -1,1 +1,1 @@
-# csfs1010-project
+# This is Natalia Shevcun's portfolio page code.
