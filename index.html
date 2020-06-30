@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta name="keywords" content="Natalia, Shevcun, writer, copywriter, stereo compositor, security, design">
         <meta name="description" content="Resume of Natalia Shevcun - security analyst, web developer, artist, copywriter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="styles.css" rel="stylesheet">
     </head>
@@ -15,20 +16,56 @@
             <div class="banner">&nbsp;NATALIA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHEVCUN</div> <!-- ** I added these spaces to create enough spacing between the words in order for the logo to fit. 
             ** The logo itself has been added as a BG to the element "banner" in CSS -->
             <br><br><br><br><br> <!-- These spaces were also added to create sufficient spacing between the banner and the navbar -->
+            
             <nav>
+                <a href="#projects"><img class="navbutton" src="elements/projects-button.png" alt="Projects Button"></a>
                 <a href="#about"><img class="navbutton" src="elements/about-button.png" alt="About Button"></a> 
                 <a href="#skills"><img class="navbutton" src="elements/skill-button.png" alt="Skills Button"></a>
                 <a href="#employment"><img class="navbutton" src="elements/employ-button.png" alt="Employment Button"></a>
                 <a href="#education"><img class="navbutton" src="elements/educ-button.png" alt="Education Button"></a>
                 <a href="#contact"><img class="navbutton" src="elements/contact-button.png" alt="Contact Button"></a>
+                <a href=login.html><img class="navbutton" src="elements/login-button.png" alt="Login Button"></a>
             </nav>
             <br><br> <!-- Without these spaces, the "About" bar ends up being hidden by the navbar -->
         </header>
 
         <main>
-            <article>
+            <section id="projects">
+                <!-- This is the start of the PROJECTS page -->
+                <!-- Figured that projects should go at the top, so employers don't need to look for them -->
+                <div class="divider"><h2 class="leftspace">PROJECTS</h2></div>
+                <div class="row">
+                    <article class="colproject">
+                        <img src="images/berkyn-screen.png" class="photo">
+                        <h3>"Forlorn Places, Fading Faces"</h3>
+                        <p>A haunting photo gallery created by me as part of a bigger team project dedicated to urbex photography and exploration of abandoned locations. It was great fun, coming up with various ways in which the eerie “ghostly” theme could be conveyed through code – from planning a “dusty”, desaturated color palette, to creating the asynchronous, letter-by-letter fade-in animation of the titles.</p>
+                        <a href="https://github.com/nshevcun/HauntedTheme2/tree/gallery" target="_blank"><h3>Click here to view the Git repository</h3></a>
+                        <h3>Click here to view a sample page</h3>
+                    </article>
+
+                    <article class="colproject">
+                        <img src="images/todo_app.png" class="photo">
+                        <h3>“To-Do App”</h3>
+                        <p>Ever wanted a handy way to keep track of daily tasks without having to use up a ton of paper? This little application may be just what you were looking for.</p>
+                        <br><br><br><br>
+                        <a href="https://github.com/nshevcun/assignment2-csfs1010" target="_blank"><h3>Click here to view the Git repository</h3></a>
+                        <h3>Click here to view the app in action</h3>
+                    </article>
+
+                    <article class="colproject">
+                        <img src="images/gallery_app.png" class="photo">
+                        <h3>“Toronto Sightseeing”</h3>
+                        <p>A quick and simple one-page gallery dedicated to all the fun places and historical buildings you may visit in my amazing home of Toronto.</p>
+                        <br><br><br><br>
+                        <a href="https://github.com/nshevcun/assignment1-csfs1010" target="_blank"><h3>Click here to view the Git repository</h3></a>
+                        <h3>Click here to view the webpage</h3>
+                    </article>
+                </div>
+            </section>
+
+            <article id="about">
                 <!-- This is the start of the ABOUT page -->
-                <div class="divider"><h2 id="about">&nbsp; &nbsp; ABOUT</h2></div>
+                <div class="divider"><h2 class="leftspace">ABOUT</h2></div>
                 <!-- Split layout into a two-column grid to place text and photo. I decided to keep a row/column layout over flexbox for browser compatibility purposes -->
                 <div class="row">
                     <div class="column left">
@@ -56,24 +93,24 @@
                     </div>
                     <!-- The right column is for the photo -->
                     <div class="column right">
-                        <img src="images/nata.png" class="widthsixty" alt="About Natalia">
+                        <img src="images/nata.png" class="widthsixty" alt="This Is What Natalia Looks Like">
                     </div>
                 </div>
             </article>
 
-            <section>
+            <section id="skills">
                 <!--This is the start of the SKILLS page -->
-                <div class="divider"><h2 id="skills">&nbsp; &nbsp; TECHNICAL SKILLS</h2></div>
+                <div class="divider"><h2 class="leftspace">TECHNICAL SKILLS</h2></div>
 
                 <div class="row">
                     <div class="colskills bordright">
                         <img src="elements/coding-icon.png" class="titleicon" alt="Coding Skills">
-                        <b>CODING SKILLS</b><br><br>
+                        <b>CODING SKILLS</b>
                         <img src="elements/coding-skills.png" class="skillicon" alt="HTML5 JS CSS C++ Flash Python">
                     </div>
                     <div class="colskills">
                         <img src="elements/office-icon.png" class="titleicon" alt="Office and Coding Tool Skills">
-                        <b>DIGITAL OFFICE MANAGEMENT <br>& CODING TOOL SKILLS</b><br><br>
+                        <b>DIGITAL OFFICE MANAGEMENT <br>& CODING TOOL SKILLS</b>
                         <img src="elements/office-skills.png" class="officeicon" alt="Microsoft Suite & Visual Studio Code">
                     </div>
                 </div>
@@ -81,26 +118,26 @@
                 <div class="row">
                     <div class="colskills bordright bordtop">
                         <img src="elements/platform-icon.png" class="titleicon" alt="Platforms">
-                        <b>PLATFORMS</b><br><br>
+                        <b>PLATFORMS</b>
                         <img src="elements/platform-skills.png" class="skillicon" alt="PC Mac Linux VirtualBox">
                     </div>
                     <div class="colskills bordtop">
                         <img src="elements/pencil-icon.png" class="titleicon" alt="Design VFX & Animation Software">
-                        <b>DESIGN, ANIMATION & VFX SOFTWARE</b><br><br>
-                        <img src="elements/art-skills.png" class="skillicon" alt="Art Software Skills">
+                        <b>DESIGN, ANIMATION & VFX SOFTWARE</b>
+                        <img src="elements/art-skills.png" class="skillicon" alt="Mocha Pro, Nuke X, Corel Draw, Cinema 4D, The Adobe Creative Suite, Flipbook, Maya 3D">
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section id="employment">
                 <!--This is the start of the EMPLOYMENT page -->
-                <div class="divider"><h2 id="employment">&nbsp; &nbsp; EMPLOYMENT</h2></div>
+                <div class="divider"><h2 class="leftspace">EMPLOYMENT</h2></div>
                 <!--The multitude of DIV tags is due to an animated overlay with text that I created for the images in this section. 
                 ** The images are placed into a container, and the text is placed into another container over the image -->
                 <div class="row">
                     <div class="colskills">
                         <div class="container">
-                            <img src="images/zinkda.png" class="image" alt="Zink Photo">
+                            <img src="images/zinkda.png" class="image" alt="Zink Digital Agency">
                             <div class="overlaytxt text">
                                 <b>
                                 <div class="centeredtext"><u>2013, 2014</u> <!-- I wanted the years to be in the center, unlike the rest of the text -->
@@ -119,7 +156,7 @@
 
                     <div class="colskills">
                         <div class="container">
-                            <img src="images/l3d.png" class="image" alt="Walk Movie Photo"> <!-- Yep, I actually worked on the stereo 3D of The Walk :) -->
+                            <img src="images/l3d.png" class="image" alt="Legend 3D - Walk Movie Screenshot"> <!-- Yep, I actually worked on the stereo 3D of The Walk :) -->
                             <div class="overlaytxt text">
                                 <b>
                                 <div class="centeredtext"><u>2014 - 2018</u>
@@ -145,7 +182,7 @@
                 <div class="row">
                     <div class="colskills">
                         <div class="container">
-                            <img src="images/sl-law.png" class="image" alt="SL Law Photo">
+                            <img src="images/sl-law.png" class="image" alt="Slomyanski Law - Personal Injury Law Firm">
                             <div class="overlaytxt text">
                                 <b>
                                 <div class="centeredtext"><u>2019 - Present</u>
@@ -164,7 +201,7 @@
 
                     <div class="colskills">
                         <div class="container">
-                            <img src="images/miscproj.png" class="image" alt="Miscellaneous Projects Photo">
+                            <img src="images/miscproj.png" class="image" alt="Miscellaneous Projects">
                             <div class="overlaytxt text">
                                 <b>
                                 <div class="centeredtext"><u>2012 - Present</u>
@@ -185,13 +222,13 @@
 
             </section>
 
-            <section>
+            <section id="education">
                 <!--This is the start of the EDUCATION page -->
-                <div class="divider"><h2 id="education">&nbsp; &nbsp; EDUCATION</h2></div>
+                <div class="divider"><h2 class="leftspace">EDUCATION</h2></div>
 
                 <div class="row">
                     <div class="coleduleft">
-                        <img src="elements/yorku.png" class="widthfull" alt="York Logo">
+                        <img src="elements/yorku.png" class="widthfull" alt="York University Logo">
                     </div>
                     <div class="coleduright">
                         <div class="fontresizer">PROGRAM STARTED IN JANUARY 2020<br>
@@ -206,7 +243,7 @@
                 <div class="row">
                     <div class="coleduleft">
                         <br><br><br>
-                        <img src="elements/ryerson.png" class="widthfull" alt="Ryerson Logo">
+                        <img src="elements/ryerson.png" class="widthfull" alt="Ryerson University Logo">
                     </div>
                     <div class="coleduright">
                         <div class="fontresizer">MAY 2018   -   APRIL 2019<br>
@@ -225,7 +262,7 @@
 
                 <div class="row">
                     <div class="coleduleft">
-                        <img src="elements/sheridan.png" class="widthfull" alt="Sheridan Logo">
+                        <img src="elements/sheridan.png" class="widthfull" alt="Sheridan College Logo">
                     </div>
                     <div class="coleduright">
                         <div class="fontresizer">SEPTEMBER 2008   -   JUNE 2012<br>
@@ -239,9 +276,9 @@
                 </div>
             </section>
         
-            <section>
+            <section id="contact">
                  <!--This is the start of the CONTACT page -->
-                <div class="divider"><h2 id="contact">&nbsp; &nbsp; CONTACT</h2></div>
+                <div class="divider"><h2 class="leftspace">CONTACT</h2></div>
 
                 <p class="centeredtext">Wish to request references or get in touch? You may do so by filling out the form below.
                 <br><br>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Natalia Shevcun's Resume - Authorization</title>
+
+        <meta charset="utf-8">
+        <meta name="keywords" content="Natalia, Shevcun, writer, copywriter, stereo compositor, security, design">
+        <meta name="description" content="Resume of Natalia Shevcun - security analyst, web developer, artist, copywriter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="banner">&nbsp;NATALIA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHEVCUN</div> <!-- ** I added these spaces to create enough spacing between the words in order for the logo to fit. 
+            ** The logo itself has been added as a BG to the element "banner" in CSS -->
+            <br><br><br><br><br> <!-- These spaces were also added to create sufficient spacing between the banner and the navbar -->
+            
+            <nav>
+                <a href="index.html#projects"><img class="navbutton" src="elements/projects-button.png" alt="Projects Button"></a>
+                <a href="index.html#about"><img class="navbutton" src="elements/about-button.png" alt="About Button"></a> 
+                <a href="index.html#skills"><img class="navbutton" src="elements/skill-button.png" alt="Skills Button"></a>
+                <a href="index.html#employment"><img class="navbutton" src="elements/employ-button.png" alt="Employment Button"></a>
+                <a href="index.html#education"><img class="navbutton" src="elements/educ-button.png" alt="Education Button"></a>
+                <a href="index.html#contact"><img class="navbutton" src="elements/contact-button.png" alt="Contact Button"></a>
+                <a href=login.html><img class="navbutton" src="elements/login-button.png" alt="Login Button"></a>
+            </nav>
+            <br><br> <!-- Without these spaces, the "About" bar ends up being hidden by the navbar -->
+        </header>
+
+        <main>
+            <form action="/action_page.php" method="post">
+               
+                <div class="centeredtext">
+                    <p class="fontshout smallerpaddingtop"><b>WHO GOES THERE?</b></p>
+                    <p><b>Please enter your username and password below, otherwise you shall not pass.</b></p>
+                    <img src="elements/line.png" alt="Divider Line">
+                </div>
+              
+                <div class="container">
+                    <div class="centered paddingtop">
+                        <label for="username" class="fontresizer"><b>Username:</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" style="background-color: #f1e8d2;" required>
+                    </div>
+                    
+                    <br>
+
+                    <div class="centered">
+                        <label for="password" class="fontresizer"><b>Password:</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" style="background-color: #f1e8d2;" required>
+                    </div>
+                    
+                    <br><br><br>
+                
+                    <div class="centered alignbottom">
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Cancel">
+                        <label>
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                </div>
+              </form>
+        </main>
+
+        <footer>
+            Copyright &#9400; Natalia Shevcun 2020
+        </footer>
+    </body>
+</html>
